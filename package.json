@@ -1,0 +1,33 @@
+{
+  "name": "smart-vulnerabilities",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@dagrejs/dagre": "^1.0.4",
+    "@heroicons/react": "^2.1.1",
+    "@juggle/resize-observer": "^3.4.0",
+    "@orcid/bibtex-parse-js": "^0.0.25",
+    "@tanstack/react-table": "^8.13.2",
+    "citation-js": "^0.7.9",
+    "classnames": "^2.5.1",
+    "d3-scale": "^4.0.2",
+    "next": "14.1.1",
+    "normalize.css": "^8.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-tracked": "^1.7.12",
+    "reactflow": "^11.10.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "standard": "^17.1.0",
+    "tailwindcss": "^3.3.0"
+  }
+}

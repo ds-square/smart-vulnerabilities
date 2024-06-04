@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "vulnerabilities",
+    "levels",
+    "categories",
+    "attacks",
+    "references",
+    "mitigations",
+    "tools",
+    "cwes",
+    "swcs",
+    "patches"
+  ],
+  "properties": {
+    "vulnerabilities": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "description",
+          "sample_code",
+          "level",
+          "categories",
+          "attacks",
+          "references",
+          "cwes",
+          "swcs",
+          "tools",
+          "mitigations",
+          "parent_vulnerabilities",
+          "enabling_vulnerabilities",
+          "impacting_vulnerabilities"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "default": ""
+          },
+          "sample_code": {
+            "type": "string",
+            "default": ""
+          },
+          "level": {
+            "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "attacks": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "cwes": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "swcs": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "tools": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "mitigations": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "parent_vulnerabilities": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "enabling_vulnerabilities": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "impacting_vulnerabilities": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "levels": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "categories": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "parent_categories"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "parent_categories": {
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "attacks": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "year",
+            "references"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "year": {
+              "type": "string"
+            },
+            "references": {
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              }
+            },
+            "patch": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "references": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "author",
+            "year",
+            "title",
+            "bibtex"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "year": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "bibtex": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        }
+      },
+      "mitigations": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "description"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "tools": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "year",
+            "type",
+            "references"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "year": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "references": {
+              "type": "array",
+              "default": [],
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "cwes": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "weakness",
+            "weakness_id",
+            "name",
+            "abstraction"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "weakness": {
+              "type": "string"
+            },
+            "weakness_id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "abstraction": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "swcs": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "weakness",
+            "weakness_id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "weakness": {
+              "type": "string"
+            },
+            "weakness_id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "cwe_mapping": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        }
+      },
+      "patches": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "description",
+            "mitigations"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "mitigations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

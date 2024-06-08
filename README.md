@@ -20,3 +20,16 @@ https://ds-square.github.io/smart-vulnerabilities/
 ## Notes
 
 - In this repository also the jaccard similarities files has been uploaded thanks to git lfs; you can find it here: `./jaccard_similarities_urls.xlsx`
+
+## Citation
+
+```bibtex
+@inproceedings{Ruggiero2024,
+  author    = {Claudia Ruggiero and Pietro Mazzini and Emilio Coppa and Simone Lenti and Silvia Bonomi},
+  title     = {{SoK: A Unified Data Model for Smart Contract Vulnerability Taxonomies}},
+  booktitle = {Proceedings of the 18th International Conference on Availability, Reliability and Security},
+  series    = {ARES},
+  year      = {2024},
+  doi       = {10.1145/3664476.3664507},
+}
+```

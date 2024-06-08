@@ -1,5 +1,7 @@
 # Smart Vulnerabilities
 
+https://ds-square.github.io/smart-vulnerabilities/
+
 Static website regenerated at each new commit that graphs entities saved in the database.
 
 PoC for the paper "SoK: A Unified Data Model for Smart Contract Vulnerability Taxonomies".

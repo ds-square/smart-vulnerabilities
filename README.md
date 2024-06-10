@@ -1,6 +1,8 @@
 # Smart Vulnerabilities
 
-PoC for the paper "SoK: A Unified Data Model for Smart Contract Vulnerability Taxonomies" - Claudia Ruggiero, Pietro Mazzini, Emilio Coppa, Simone Lenti, Silvia Bonomi at ARES 2024: Proceedings of the 18th International Conference on Availability, Reliability and Security
+PoC for the paper "SoK: A Unified Data Model for Smart Contract Vulnerability Taxonomies" - Claudia Ruggiero, Pietro Mazzini, Emilio Coppa, Simone Lenti, Silvia Bonomi at ARES 2024: Proceedings of the 18th International Conference on Availability, Reliability and Security.
+
+Preprint of the paper at: https://github.com/ds-square/smart-vulnerabilities/blob/main/SoK__A_Unified_Data_Model_for_Smart_Contract_Vulnerability_Taxonomies.pdf
 
 Static website regenerated at each new commit that graphs entities saved in the database.
 
